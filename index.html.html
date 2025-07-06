@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delish Bites</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+     
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      background: url("images/webyy.jpg") center/cover no-repeat;
+      color: white;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text .btn {
+      padding: 10px 20px;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      margin-top: 15px;
+      display: inline-block;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .hero-text .btn:hover {
+      background-color: #d35400;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .menu-section .menu-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background-color: #ecf0f1;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Delish Bites</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Delish Bites</h2>
+      <p>Fresh Ingredients, Tasty Meals</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </header>
+
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Margherita Pizza</h3>
+        <p>Classic delight with fresh basil and mozzarella.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Grilled Chicken</h3>
+        <p>Juicy chicken breast served with seasonal veggies.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Pasta Alfredo</h3>
+        <p>Creamy white sauce pasta with mushrooms and herbs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>At Delish Bites, we serve freshly made meals using the finest ingredients. Our chefs blend traditional flavors with modern cooking to create unforgettable dishes.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@delishbites.com</p>
+    <p>Phone: +91 98765 43210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delish Bites. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
